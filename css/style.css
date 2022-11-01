@@ -295,6 +295,10 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    transition-property: background-color, box-shadow, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .close-icon-box {
@@ -404,6 +408,13 @@ img {
     width: 370px;
     height: 70px;
     bottom: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     background-color: rgba(47, 48, 58, 0.8);
 }
@@ -474,7 +485,7 @@ img {
 
 .net-list {
     display: flex;
-    padding-top: 30px;
+    padding-top: 16px;
     padding-bottom: 30px;
     justify-content: center;
     gap: 10px;
@@ -496,6 +507,9 @@ img {
 
 .net-icon {
     fill: var(--icons-color);
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -523,6 +537,9 @@ img {
 
 .clients.title {
     margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
