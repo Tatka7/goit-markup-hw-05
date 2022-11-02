@@ -284,12 +284,12 @@ img {
 }
 
 .modal {
-    position: fixed;
+    position: absolute;
     width: 528px;
     height: 581px;
-    top: 221px;
-    left: calc(100% / 2 - 264px);
-    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -421,6 +421,7 @@ img {
 
 .services-list .description {
     margin: auto;
+    font-size: 14px;
     color: var(--icons-focus-collor);
 }
 
@@ -475,7 +476,7 @@ img {
     letter-spacing: 0.03em;
 }
 
-.description {
+.team-description {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -660,18 +661,25 @@ img {
     display: inline-flex;
     width: 44px;
     height: 44px;
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     border-radius: 50%;
+
+    transition-property: background-color, color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social .social-icon {
     width: 20px;
     height: 20px;
     fill: #ffffff;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover, 
